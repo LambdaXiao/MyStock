@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:id="@+id/top_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/transparent">
+
+        <com.android.mystock.common.views.RippleView
+            android:id="@+id/personal"
+            android:layout_width="@dimen/topbar_itemwidth"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            ripple:rv_centered="true"
+            ripple:rv_zoom="true">
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:src="@mipmap/mine_icon" />
+        </com.android.mystock.common.views.RippleView>
+
+        <com.android.mystock.common.views.RippleView
+            android:id="@+id/researchborder"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/solid_research"
+            ripple:rv_zoom="true">
+            <ImageView
+                android:id="@+id/searchimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/search_small_icon"/>
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/searchimg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/market_research" />
+        </com.android.mystock.common.views.RippleView>
+
+    </FrameLayout>
+</LinearLayout>

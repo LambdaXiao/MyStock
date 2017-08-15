@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/topbarbackground">
+        <com.android.mystock.common.views.RippleView
+            android:id="@+id/top_back"
+            android:layout_width="@dimen/topbar_itemwidth"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            ripple:rv_centered="true"
+            ripple:rv_zoom="true">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/nav_back"/>
+        </com.android.mystock.common.views.RippleView>
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="自选股编辑"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <com.android.mystock.common.views.RippleView
+            android:id="@+id/complete"
+            android:layout_width="@dimen/topbar_itemwidth"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            ripple:rv_centered="true"
+            ripple:rv_zoom="true">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/market_complete" />
+        </com.android.mystock.common.views.RippleView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebarbackground"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/Text_gray_16"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="46dip"
+            android:text="全部股票" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center">
+
+            <TextView
+                style="@style/Text_gray_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="置顶" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Text_gray_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drag_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center">
+
+            <TextView
+                style="@style/Text_gray_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拖动" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.android.mystock.common.views.dslv.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dragSortListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:dividerHeight="0.5dp"
+        dslv:collapsed_height="2dp"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:max_drag_scroll_speed="0.5"
+        dslv:remove_enabled="false"
+        dslv:remove_mode="flingRemove"
+        dslv:slide_shuffle_speed="0.3"
+        dslv:sort_enabled="true"
+        dslv:track_drag_sort="false"
+        dslv:use_default_controller="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/menubarbackground"
+        android:minHeight="48dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <LinearLayout
+            android:id="@+id/selectAllParent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/main_tab_pressed"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/selectAll"
+                android:layout_width="36dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:padding="5dip"
+                android:src="@mipmap/fuxuan_btn" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingRight="5dip"
+                android:text="全选"
+                android:textColor="@color/black_skin"
+                android:textSize="16dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deleteTextParent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/main_tab_pressed"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/deleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/market_delete"
+                android:textColor="@color/black_skin"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

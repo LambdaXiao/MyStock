@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">股市行情</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!--首页 -->
+
+    <!--行情自选 -->
+    <string name="market_name">行情</string>
+    <string name="market_optional">自选</string>
+    <string name="market_edit">编辑</string>
+    <string name="market_delete">删除%1$s</string>
+    <string name="market_complete">完成</string>
+    <string name="market_research">代码/拼音/首字母</string>
+    <string name="market_news">新闻公告</string>
+    <string name="market_report">研究报告</string>
+    <string name="market_browser">最近浏览</string>
+    <string name="hq_rmhe">热门行业</string>
+    <string name="hq_rmgn">热门概念</string>
+    <string name="hq_rmdy">热门地域</string>
+    <string name="hq_zfb">涨幅榜</string>
+    <string name="hq_dfb">跌幅榜</string>
+    <string name="hq_hslb">换手率</string>
+    <string name="hq_cjeb">成交额</string>
+    <string name="hq_masz">沪市港股通</string>
+    <string name="hq_mash">深市港股通</string>
+    <string name="hq_maszbalance">沪市港股通余额</string>
+    <string name="hq_mashbalance">深市港股通余额</string>
+
+    <!--交易 -->
+
+
+    <!--我的 -->
+    <string name="mine_name">我的</string>
+    <string name="mine_loginname">登录查看我的资产</string>
+    <string name="mine_notlogin">未登录</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_skin">换肤</string>
+    <string name="mine_skin_black">黑色主题</string>
+    <string name="mine_skin_white">白色主题</string>
+    <string name="mine_personalinfo">个人信息</string>
+
+
+    <!-- -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

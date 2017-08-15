@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hqtab">
+        <item>沪深 </item>
+        <item>板块</item>
+        <item>港股</item>
+        <item>港股通</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="fs_minutes">
+        <item>分钟</item>
+        <item>5分钟 </item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+    </string-array>
+</resources>

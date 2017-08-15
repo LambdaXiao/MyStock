@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/stock_list_height"
+    android:background="@drawable/main_list_pressed"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/viewTagParent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/stock_list_height"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/viewTag"
+                android:layout_width="36dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:padding="5dip"
+                android:src="@mipmap/fuxuan_btn" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/viewTag"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="5dip">
+
+                <TextView
+                    android:id="@+id/my_stock_list_stock_name"
+                    style="@style/Text_black_16"
+                    android:layout_width="75dip"
+                    android:layout_height="wrap_content" />
+
+                <com.android.mystock.common.views.NumberTextView
+                    android:id="@+id/my_stock_list_stock_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/up_top_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:background="@drawable/main_list_pressed"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/top" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@id/drag_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:src="@mipmap/drag" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

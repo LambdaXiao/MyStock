@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_zs_pressed"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/zsview">
+
+    <com.android.mystock.common.views.NumberTextView
+        android:id="@+id/name"
+        style="@style/Text_black_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </com.android.mystock.common.views.NumberTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/zhangdie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+        </ImageView>
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/zjcj"
+            style="@style/Text_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" >
+        </com.android.mystock.common.views.NumberTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="3dp">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/zhd"
+            style="@style/Text_black_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="3dp"
+            android:gravity="right" >
+        </com.android.mystock.common.views.NumberTextView>
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/zdf"
+            style="@style/Text_black_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:gravity="left">
+        </com.android.mystock.common.views.NumberTextView>
+    </LinearLayout>
+
+</LinearLayout>

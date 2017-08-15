@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+<FrameLayout
+    android:id="@+id/top_id"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbar_height"
+    android:background="@color/topbarbackground">
+
+    <com.android.mystock.common.views.RippleView
+        android:id="@+id/personal"
+        android:layout_width="@dimen/topbar_itemwidth"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        ripple:rv_centered="true"
+        ripple:rv_zoom="true">
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@mipmap/mine_icon" />
+    </com.android.mystock.common.views.RippleView>
+
+    <TextView
+        android:id="@+id/titleText"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="@string/market_name" />
+
+    <com.android.mystock.common.views.RippleView
+        android:id="@+id/edit_zxg"
+        android:layout_width="@dimen/topbar_itemwidth"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        ripple:rv_centered="true"
+        ripple:rv_zoom="true">
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@mipmap/icon_edit" />
+
+    </com.android.mystock.common.views.RippleView>
+
+    <com.android.mystock.common.views.RippleView
+        android:id="@+id/top_search"
+        android:layout_width="@dimen/topbar_itemwidth"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        ripple:rv_centered="true"
+        ripple:rv_zoom="true">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_search" />
+    </com.android.mystock.common.views.RippleView>
+
+</FrameLayout>
+</android.support.design.widget.AppBarLayout>

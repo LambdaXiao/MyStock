@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numColumns="auto_fit"
+                    android:padding="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:background="@color/unpressed2"
+                    android:stretchMode="columnWidth"></GridView>
+
+
+                <RelativeLayout
+                    android:id="@+id/shrela"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:background="@drawable/main_title_pressed"
+                    android:paddingLeft="10dip">
+
+                    <ImageView
+                        android:id="@+id/shimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/jian" />
+
+                    <TextView
+                        android:textColor="@color/blue_skin"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/zfbimg"
+                        android:text="@string/hq_masz" />
+
+                    <LinearLayout
+                        android:id="@+id/shmore"
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/main_title_pressed"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/hq_b_more_press" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/linebackground"/>
+
+                <com.android.mystock.common.views.ListView.NoScrollListView
+                    android:id="@+id/mashlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0.5dp"
+                    android:divider="@color/linebackground"
+                    android:scrollbars="none"></com.android.mystock.common.views.ListView.NoScrollListView>
+                <RelativeLayout
+                    android:id="@+id/szrela"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/main_title_pressed"
+                    android:paddingLeft="10dip">
+
+                    <ImageView
+                        android:id="@+id/szimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/jia" />
+
+                    <TextView
+                        android:textColor="@color/blue_skin"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/dfbimg"
+                        android:text="@string/hq_mash" />
+
+                    <LinearLayout
+                        android:id="@+id/szmore"
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/main_title_pressed"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/hq_b_more_press" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/linebackground"/>
+
+                <com.android.mystock.common.views.ListView.NoScrollListView
+                    android:visibility="gone"
+                    android:id="@+id/maszlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0.5dp"
+                    android:divider="@color/linebackground"
+                    android:scrollbars="none"></com.android.mystock.common.views.ListView.NoScrollListView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>
+

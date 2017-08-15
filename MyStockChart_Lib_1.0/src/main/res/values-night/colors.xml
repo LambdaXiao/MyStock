@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 分时K线颜色值 -->
+    <color name="minute_grayLine">#2D3945</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+    <color name="minute_black">#101419</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_zhoutext">#858D93</color>
+    <color name="marker_bg">#1C232E</color>
+    <color name="kline_linebg1">#ffffff</color>
+    <color name="highlight">#ffffff</color>
+    <!-- ******************************************************* -->
+</resources>

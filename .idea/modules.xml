@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BlockCanaryExJRT/BlockCanaryExJRT.iml" filepath="$PROJECT_DIR$/BlockCanaryExJRT/BlockCanaryExJRT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoBanner_Lib/FlycoBanner_Lib.iml" filepath="$PROJECT_DIR$/FlycoBanner_Lib/FlycoBanner_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" filepath="$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPTabBar_Lib/JPTabBar_Lib.iml" filepath="$PROJECT_DIR$/JPTabBar_Lib/JPTabBar_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyStock.iml" filepath="$PROJECT_DIR$/MyStock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyStockChart_Lib_1.0/MyStockChart_Lib_1.0.iml" filepath="$PROJECT_DIR$/MyStockChart_Lib_1.0/MyStockChart_Lib_1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TwinklingRefreshLayout_Lib/TwinklingRefreshLayout_Lib.iml" filepath="$PROJECT_DIR$/TwinklingRefreshLayout_Lib/TwinklingRefreshLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eno_net_lib/eno_net_lib.iml" filepath="$PROJECT_DIR$/eno_net_lib/eno_net_lib.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.android.mystock.common.views.smartisanpull.SmartisanRefreshableScrollview
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/linebackground"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/titlebarbackground"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    style="@style/Text_black_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hq_rmhe" />
+
+                <FrameLayout
+                    android:id="@+id/moreplate1"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_title_pressed"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/hq_b_more_press" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <com.android.mystock.common.views.gridview.NoScrollGridView
+                android:id="@+id/gridview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numColumns="auto_fit"
+                android:background="@color/titlebarbackground"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:stretchMode="columnWidth"></com.android.mystock.common.views.gridview.NoScrollGridView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/titlebarbackground"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    style="@style/Text_black_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hq_rmgn" />
+
+                <FrameLayout
+                    android:id="@+id/moreplate2"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_title_pressed"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/hq_b_more_press" />
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <com.android.mystock.common.views.gridview.NoScrollGridView
+                android:id="@+id/gridview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numColumns="auto_fit"
+                android:background="@color/titlebarbackground"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:stretchMode="columnWidth"></com.android.mystock.common.views.gridview.NoScrollGridView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/titlebarbackground"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    style="@style/Text_black_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hq_rmdy" />
+
+                <FrameLayout
+                    android:id="@+id/moreplate3"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_title_pressed"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/hq_b_more_press" />
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            <com.android.mystock.common.views.gridview.NoScrollGridView
+                android:id="@+id/gridview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numColumns="auto_fit"
+                android:background="@color/titlebarbackground"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:stretchMode="columnWidth" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/titlebarbackground"/>
+        </LinearLayout>
+    </ScrollView>
+    </com.android.mystock.common.views.smartisanpull.SmartisanRefreshableScrollview>
+</LinearLayout>

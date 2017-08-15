@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 分时K线颜色值 -->
+    <color name="minute_grayLine">#E5E5E5</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+    <color name="minute_black">#ffffff</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_zhoutext">#858D93</color>
+    <color name="marker_bg">#1C232E</color>
+    <color name="highlight">#333333</color>
+    <color name="kline_ma1">#e91e63</color>
+    <color name="kline_ma2">#E7B448</color>
+    <color name="kline_ma3">#00D0FC</color>
+    <color name="kline_linebg1">#333333</color>
+    <color name="kline_linebg2">#E7B448</color>
+    <color name="kline_linebg3">#9c27b0</color>
+
+    <color name="up_color">#E9403C</color><!-- 行情UP颜色  涨-->
+    <color name="down_color">#30A52F</color><!-- 行情DOWN颜色  跌 -->
+    <color name="equal_color">#696969</color><!-- 行情Equal颜色  不变 -->
+    <!-- ******************************************************* -->
+</resources>

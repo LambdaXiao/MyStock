@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:banner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.mystock.ui.homepages.FragmentMainHome">
+    <com.android.mystock.common.views.scrollview.NoScrollScrollView
+        android:id="@+id/scrolls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.android.mystock.common.views.banner.SimpleImageBanner
+                android:id="@+id/sib_the_most_comlex_usage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                banner:bb_barColor="#88000000"
+                banner:bb_barPaddingBottom="5dp"
+                banner:bb_barPaddingLeft="10dp"
+                banner:bb_barPaddingRight="10dp"
+                banner:bb_barPaddingTop="5dp"
+                banner:bb_delay="2"
+                banner:bb_indicatorCornerRadius="3dp"
+                banner:bb_indicatorGap="8dp"
+                banner:bb_indicatorGravity="RIGHT"
+                banner:bb_indicatorHeight="6dp"
+                banner:bb_indicatorSelectColor="#ffffff"
+                banner:bb_indicatorStyle="CORNER_RECTANGLE"
+                banner:bb_indicatorUnselectColor="#88ffffff"
+                banner:bb_indicatorWidth="6dp"
+                banner:bb_isAutoScrollEnable="true"
+                banner:bb_isBarShowWhenLast="true"
+                banner:bb_isIndicatorShow="true"
+                banner:bb_isLoopEnable="true"
+                banner:bb_isTitleShow="true"
+                banner:bb_period="10"
+                banner:bb_scale="0.5625"
+                banner:bb_textColor="#ffffff"
+                banner:bb_textSize="13.5sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.mystock.common.views.scrollview.NoScrollScrollView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_navigation_homebar"></include>
+
+
+</FrameLayout>

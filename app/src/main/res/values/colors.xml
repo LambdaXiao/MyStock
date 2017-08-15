@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E9403C</color>
+    <color name="colorPrimaryDark">#E9403C</color>
+    <color name="colorAccent">#E9403C</color>
+
+    <color name="windowsbackground">#F5F5F5</color><!-- 统一屏幕背景色 -->
+    <color name="topbarbackground">#E9403C</color><!-- 统一顶部bar背景色 -->
+    <color name="bottombarbackground">#ffffffff</color><!-- 统一底部导航栏bar背景色 -->
+    <color name="menubarbackground">#ffffffff</color><!-- 统一菜单栏tab背景色 -->
+    <color name="titlebarbackground">#F5F6F8</color><!-- 统一小标题栏背景色 -->
+    <color name="linebackground">#E5E5E5</color><!-- 统一分割线背景色 -->
+
+    <color name="transparent">#00000000</color><!-- 统一全透明色 -->
+    <color name="half_transparent">#3f000000</color><!-- 部分透明度 -->
+    <color name="red">#E9403C</color><!-- 统一红色 -->
+    <color name="green">#009900</color><!-- 统一绿色 -->
+    <color name="golden">#BEB448</color><!--统一金色-->
+    <color name="orange">#F77A06</color><!-- 统一橙色 -->
+    <color name="blue">#3897DB</color><!-- 统一蓝色 -->
+    <color name="brown">#B58441</color><!--统一棕色-->
+    <color name="white">#FFFFFF</color><!-- 统一白色 -->
+    <color name="black">#333333</color><!-- 统一黑色 -->
+    <color name="gray">#959595</color><!--统一灰色-->
+    <color name="blue_skin">#E9403C</color><!-- 随换肤变化的蓝色转红色 -->
+    <color name="white_skin">#FFFFFF</color><!-- 随换肤变化的白色 -->
+    <color name="black_skin">#333333</color><!-- 随换肤变化的黑色 -->
+
+    <color name="up_color">#E9403C</color><!-- 行情UP颜色  涨-->
+    <color name="down_color">#30A52F</color><!-- 行情DOWN颜色  跌 -->
+    <color name="equal_color">#696969</color><!-- 行情Equal颜色  不变 -->
+
+    <color name="pressed">#D9D9D9</color>
+    <color name="unpressed1">@color/menubarbackground</color><!-- 菜单栏背景-->
+    <color name="unpressed2">#ffffffff</color><!-- 数据列表背景-->
+    <color name="unpressed3">@color/titlebarbackground</color><!-- 标题背景-->
+    <color name="unpressed4">#ffffffff</color><!-- 指数数据框背景-->
+    <color name="unpressed5">#ffffff</color><!-- 设置栏目背景-->
+    <color name="unpressed6">@color/bottombarbackground</color><!-- 底部栏目背景-->
+
+    <color name="bottomline">#E5E5E5</color><!-- 底部导航菜单上面的分割线颜色 -->
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="container_background">#FFFFFF</color><!-- 侧滑栏背景颜色 -->
+    <color name="skin_SegmentBg">#E9403C</color><!-- 交易分段选择背景色 -->
+    <color name="skin_SegmentIndicator">#FFFFFF</color><!-- 交易分段选择边框色 -->
+    <color name="skin_Segmentselector">#E9403C</color><!-- 交易分段选中文字色 -->
+    <color name="optional_barbg">#FFFFFF</color><!-- 自选新闻公告栏背景 -->
+    <color name="refresh_bg">#333333</color><!-- QQ样式下拉刷新背景 -->
+
+</resources>

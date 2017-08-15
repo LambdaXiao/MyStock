@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_backtitlesearch" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/titlebarbackground"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Text_gray_16"
+            android:text="行业名称"/>
+        <TextView
+            android:id="@+id/zdf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Text_blue_16"
+            android:text="涨跌幅"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Text_gray_16"
+            android:text="领涨股"/>
+    </LinearLayout>
+    <com.android.mystock.common.views.pullableview.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_view">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.android.mystock.common.views.pullableview.PullableListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:divider="@color/linebackground"
+            android:dividerHeight="0.5dip">
+        </com.android.mystock.common.views.pullableview.PullableListView>
+
+        <include layout="@layout/load_more"/>
+
+    </com.android.mystock.common.views.pullableview.PullToRefreshLayout>
+</LinearLayout>

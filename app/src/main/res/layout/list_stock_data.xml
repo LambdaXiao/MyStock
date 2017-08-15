@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_list_pressed"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/my_stock_viewTag"
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="12dip"
+        android:background="@mipmap/hk"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stock_list_height"
+        android:layout_weight="1.5"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@id/my_stock_viewTag"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/drag_handle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.android.mystock.common.views.NumberTextView
+                android:id="@+id/my_stock_list_stock_name"
+                style="@style/Text_black_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.android.mystock.common.views.NumberTextView
+                android:id="@+id/my_stock_list_stock_code"
+                style="@style/Text_gray_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/my_stock_list_stock_price"
+            style="@style/Text_black_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/my_stock_list_stock_Proportion"
+            style="@style/Text_black_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</FrameLayout>

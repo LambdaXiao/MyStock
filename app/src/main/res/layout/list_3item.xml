@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stock_list_height"
+    android:background="@drawable/main_list_pressed">
+
+        <TextView
+            android:id="@+id/platename"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Text_black_16"
+            android:text="--"/>
+        <TextView
+            android:id="@+id/stockzdf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Text_red_16"
+            android:text="--"/>
+        <TextView
+            android:id="@+id/stockname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Text_black_16"
+            android:text="--"/>
+
+</LinearLayout>

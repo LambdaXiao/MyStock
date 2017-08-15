@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/minute_black"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.mystockchart_lib.charting.mychart.MyLineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></com.mystockchart_lib.charting.mychart.MyLineChart>
+
+        <com.mystockchart_lib.charting.mychart.MyBarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.mystockchart_lib.charting.mychart.MyBarChart>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fivespeedlayout"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_zhibiao"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/fivespeed_common_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/detaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/detailListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"></ListView>
+
+            <View
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <com.flyco.tablayout.CommonTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tl_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/minute_grayLine"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_color="@color/blue_skin"
+            tl:tl_indicator_corner_radius="1.5dp"
+            tl:tl_indicator_height="3dp"
+            tl:tl_indicator_style="TRIANGLE"
+            tl:tl_indicator_width="10dp"
+            tl:tl_textSelectColor="@color/blue_skin"
+            tl:tl_textUnselectColor="@color/gray"
+            tl:tl_textsize="12dp" />
+    </LinearLayout>
+</LinearLayout>

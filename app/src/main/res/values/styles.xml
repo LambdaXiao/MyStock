@@ -1,0 +1,252 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowsbackground</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!-- 交易行情五档 -->
+    <style name="hq_trade_wd_textView">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:paddingLeft">1dip</item>
+        <item name="android:paddingRight">1dip</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 各大小字号的各种颜色字 -->
+
+    <style name="Text_black_20">
+        <!-- 20号 黑色字体 -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_black_18">
+        <!-- 18号 黑色字体 -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_black_16">
+        <!-- 16号 黑色字体 -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_black_14">
+        <!-- 14号 黑色字体 -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_black_12">
+        <!-- 12号 黑色字体 -->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_black_10">
+        <!-- 10号 黑色字体 -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_white_10">
+        <!-- 10号 白色字体 -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_white_12">
+        <!-- 12号 白色字体 -->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_white_14">
+        <!-- 14号 白色字体 -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_white_16">
+        <!-- 16号 白色字体 -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_white_18">
+        <!-- 16号 白色字体 -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white_skin</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_blue_16">
+        <!-- 16号 白色字体 -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_blue_12">
+        <!-- 16号 白色字体 -->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_gray_10">
+        <!-- 10号 灰色字体 -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_gray_12">
+        <!-- 12号 灰色字体 -->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_gray_14">
+        <!-- 14号 灰色字体 -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_gray_16">
+        <!-- 16号 灰色字体 -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_gray_18">
+        <!-- 16号 灰色字体 -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_gray_20">
+        <!-- 20号 灰色字体 -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_red_10">
+        <!-- 10号 红色字体 -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_red_12">
+        <!-- 12号 红色字体 -->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_red_14">
+        <!-- 14号 红色字体 -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_red_16">
+        <!-- 16号 红色字体 -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_red_18">
+        <!-- 18号 红色字体 -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="Text_orange_20">
+        <!-- 16号 橙色字体 -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--popupwindow弹出动画-->
+    <style name="contextMenuAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/context_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/context_menu_exit</item>
+    </style>
+
+</resources>

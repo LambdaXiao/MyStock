@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fivespeed"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_titile5"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="卖5" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_price5"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_vol5"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_titile4"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="卖4" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_price4"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_vol4"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_titile3"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="卖3" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_price3"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_vol3"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_titile2"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="卖2" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_price2"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_vol2"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_titile1"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="卖1" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_price1"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/sell_vol1"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/linebackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_title1"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="买1" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_price1"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_vol1"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_title2"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="买2" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_price2"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_vol2"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_title3"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="买3" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_price3"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_vol3"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_title4"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="买4" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_price4"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_vol4"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_title5"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center_vertical"
+            android:text="买5" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_price5"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="center"
+            android:text="--" />
+
+        <com.android.mystock.common.views.NumberTextView
+            android:id="@+id/buy_vol5"
+            style="@style/hq_trade_wd_textView"
+            android:gravity="right|center_vertical"
+            android:text="--" />
+    </LinearLayout>
+</LinearLayout>
+

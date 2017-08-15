@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Studio\DEMO\MyProject\myChart\MyStock\BlockCanaryExJRT\src\main\assets"/><source path="C:\Studio\DEMO\MyProject\myChart\MyStock\BlockCanaryExJRT\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Studio\DEMO\MyProject\myChart\MyStock\BlockCanaryExJRT\src\debug\assets"/></dataSet></merger>

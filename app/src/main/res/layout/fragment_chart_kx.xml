@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/minute_black"
+    android:orientation="horizontal"
+    tools:context="com.android.mystock.ui.marketpages.fskx.KLineFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.mystockchart_lib.charting.mychart.MyCombinedChart
+            android:id="@+id/combinedchart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></com.mystockchart_lib.charting.mychart.MyCombinedChart>
+
+        <com.mystockchart_lib.charting.mychart.MyCombinedChart
+            android:id="@+id/combinedchart2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></com.mystockchart_lib.charting.mychart.MyCombinedChart>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/indexlayout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border_zhibiao"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/bfq"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/main_list_pressed"
+            android:gravity="center"
+            android:text="不复权"
+            style="@style/Text_gray_14"/>
+        <TextView
+            android:id="@+id/qfq"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/main_list_pressed"
+            android:gravity="center"
+            android:text="前复权"
+            style="@style/Text_gray_14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/minute_grayLine"/>
+
+        <ListView
+            android:id="@+id/index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

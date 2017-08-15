@@ -1,0 +1,590 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android.mystock.common.views.smartisanpull.SmartisanRefreshableScrollview
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.android.mystock.common.views.scrollview.NoScrollScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/menubarbackground"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_zjcj"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="--"
+                            android:textSize="26dip"
+                            android:textStyle="bold" />
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_zde"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/text_zjcj"
+                            android:paddingLeft="15dp"
+                            android:text="--"
+                            android:textSize="14dip" />
+
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_zdf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/text_zjcj"
+                            android:paddingRight="15dp"
+                            android:text="--"
+                            android:textSize="14dip" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="最高" />
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_zg"
+                            style="@style/Text_black_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="--" />
+
+                        <TextView
+                            style="@style/Text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="最低" />
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_zd"
+                            style="@style/Text_black_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="--" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="今开" />
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_kp"
+                            style="@style/Text_black_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="--" />
+
+                        <TextView
+                            android:id="@+id/text_time"
+                            style="@style/Text_gray_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="换手率" />
+
+                        <com.android.mystock.common.views.NumberTextView
+                            android:id="@+id/text_hsl"
+                            style="@style/Text_black_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="--" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="成交量" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/text_cjl"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="--" />
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="成交额" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/text_cje"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="--" />
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/hidevalue"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/hideimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/totop" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/hqvalueview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/menubarbackground"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="涨停" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_zt"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="跌停" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_dt"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昨收" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_zrsp"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="内盘" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_np"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="外盘" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_wp"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="均价" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_jj"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="委比" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_wb"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="量比" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_lb"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Text_gray_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="振幅" />
+
+                            <com.android.mystock.common.views.NumberTextView
+                                android:id="@+id/tv_zf"
+                                style="@style/Text_black_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="--" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/menubarbackground">
+                <com.flyco.tablayout.CommonTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tl_1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_weight="1"
+                    tl:tl_iconVisible="false"
+                    tl:tl_indicator_color="@color/blue_skin"
+                    tl:tl_textSelectColor="@color/blue_skin"
+                    tl:tl_textUnselectColor="@color/gray"
+                    tl:tl_textsize="14dp" />
+
+                    <FrameLayout
+                        android:id="@+id/minuteview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/minuteID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:text="分钟"/>
+                        <View
+                            android:visibility="gone"
+                            android:id="@+id/underline"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/blue_skin"
+                            android:layout_gravity="bottom"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/chart_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/suspension2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:orientation="vertical">
+
+                    <com.flyco.tablayout.CommonTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/tl_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:background="@color/menubarbackground"
+                        tl:tl_iconVisible="false"
+                        tl:tl_indicator_color="@color/blue_skin"
+                        tl:tl_textSelectColor="@color/blue_skin"
+                        tl:tl_textUnselectColor="@color/gray"
+                        tl:tl_textsize="14dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/f10andnews"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dip">
+
+                </FrameLayout>
+            </LinearLayout>
+        </com.android.mystock.common.views.scrollview.NoScrollScrollView>
+    </com.android.mystock.common.views.smartisanpull.SmartisanRefreshableScrollview>
+
+    <LinearLayout
+        android:id="@+id/suspension1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="vertical"></LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linebackground" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom"
+        android:background="@color/bottombarbackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/zslayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_tab_pressed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zsname"
+                style="@style/Text_black_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上证指数" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addzx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_tab_pressed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zxname"
+                style="@style/Text_black_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自选" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yujing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_tab_pressed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text_black_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预警" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/totrade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_red_pressed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

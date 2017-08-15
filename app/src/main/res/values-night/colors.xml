@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C2226</color>
+    <color name="colorPrimaryDark">#1C2226</color>
+    <color name="colorAccent">#E9403C</color>
+
+    <color name="windowsbackground">#0F1418</color><!-- 统一屏幕背景色 -->
+    <color name="topbarbackground">#1C2226</color><!-- 统一顶部bar背景色 -->
+    <color name="bottombarbackground">#1D2226</color><!-- 统一底部导航栏bar背景色 -->
+    <color name="menubarbackground">#1A1F24</color><!-- 统一菜单栏tab背景色 -->
+    <color name="titlebarbackground">#191F23</color><!-- 统一小标题栏背景色 -->
+    <color name="linebackground">#1D2228</color><!-- 统一分割线背景色 -->
+
+    <color name="blue_skin">#3897DB</color><!-- 随换肤变化的蓝色转红色 -->
+    <color name="white_skin">#333333</color><!-- 随换肤变化的白色 -->
+    <color name="black_skin">#FFFFFF</color><!-- 随换肤变化的黑色 -->
+
+    <color name="pressed">#2E2E2E</color>
+    <color name="unpressed1">@color/menubarbackground</color><!-- 菜单栏背景-->
+    <color name="unpressed2">@color/windowsbackground</color><!-- 数据列表背景-->
+    <color name="unpressed3">@color/titlebarbackground</color><!-- 标题背景-->
+    <color name="unpressed4">#191F23</color><!-- 指数数据框背景-->
+    <color name="unpressed5">#191F23</color><!-- 设置栏目背景-->
+
+    <color name="bottomline">#373737</color><!-- 底部导航菜单上面的分割线颜色 -->
+    <color name="container_background">#383F41</color><!-- 侧滑栏背景颜色 -->
+    <color name="skin_SegmentBg">#1D2228</color><!-- 交易分段选择背景色 -->
+    <color name="skin_SegmentIndicator">#3897DB</color><!-- 交易分段选择边框色 -->
+    <color name="skin_Segmentselector">#FFFFFF</color><!-- 交易分段选中文字色 -->
+    <color name="optional_barbg">#1D2228</color><!-- 自选新闻公告栏背景 -->
+    <color name="refresh_bg">#0F1418</color><!-- QQ样式下拉刷新背景 -->
+
+</resources>

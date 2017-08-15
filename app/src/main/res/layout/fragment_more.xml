@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text_black_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:background="@color/titlebarbackground"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="沪深" />
+
+                    <com.android.mystock.common.views.gridview.NoScrollGridView
+                        android:id="@+id/gridview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numColumns="auto_fit"
+                        android:background="@color/titlebarbackground"
+                        android:verticalSpacing="2dp"
+                        android:horizontalSpacing="2dp"
+                        android:stretchMode="columnWidth"></com.android.mystock.common.views.gridview.NoScrollGridView>
+
+                    <TextView
+                        style="@style/Text_black_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:background="@color/titlebarbackground"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="指数" />
+
+                    <com.android.mystock.common.views.gridview.NoScrollGridView
+                        android:id="@+id/gridview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numColumns="auto_fit"
+                        android:background="@color/titlebarbackground"
+                        android:verticalSpacing="2dp"
+                        android:horizontalSpacing="2dp"
+                        android:stretchMode="columnWidth"></com.android.mystock.common.views.gridview.NoScrollGridView>
+
+                    <TextView
+                        style="@style/Text_black_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:background="@color/titlebarbackground"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="港股" />
+
+                    <com.android.mystock.common.views.gridview.NoScrollGridView
+                        android:id="@+id/gridview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numColumns="auto_fit"
+                        android:background="@color/titlebarbackground"
+                        android:verticalSpacing="2dp"
+                        android:horizontalSpacing="2dp"
+                        android:stretchMode="columnWidth" />
+                    <TextView
+                        style="@style/Text_black_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:background="@color/titlebarbackground"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="基金" />
+
+                    <com.android.mystock.common.views.gridview.NoScrollGridView
+                        android:id="@+id/gridview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numColumns="auto_fit"
+                        android:background="@color/titlebarbackground"
+                        android:verticalSpacing="2dp"
+                        android:horizontalSpacing="2dp"
+                        android:stretchMode="columnWidth" />
+
+                    <TextView
+                        style="@style/Text_black_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:background="@color/titlebarbackground"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="债券" />
+
+                    <com.android.mystock.common.views.gridview.NoScrollGridView
+                        android:id="@+id/gridview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numColumns="auto_fit"
+                        android:background="@color/titlebarbackground"
+                        android:verticalSpacing="2dp"
+                        android:horizontalSpacing="2dp"
+                        android:stretchMode="columnWidth" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/titlebarbackground"/>
+                </LinearLayout>
+            </ScrollView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+</FrameLayout>

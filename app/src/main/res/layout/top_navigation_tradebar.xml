@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+<FrameLayout
+    android:id="@+id/top_id"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbar_height"
+    android:background="@color/topbarbackground">
+
+    <com.android.mystock.common.views.RippleView
+        android:id="@+id/personal"
+        android:layout_width="@dimen/topbar_itemwidth"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        ripple:rv_centered="true"
+        ripple:rv_zoom="true">
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@mipmap/mine_icon" />
+    </com.android.mystock.common.views.RippleView>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        tl:tl_bar_color="@color/skin_SegmentBg"
+        tl:tl_indicator_color="@color/skin_SegmentIndicator"
+        tl:tl_indicator_corner_radius="5dp"
+        tl:tl_textSelectColor="@color/skin_Segmentselector"
+        tl:tl_tab_padding="20dp"/>
+
+</FrameLayout>
+</android.support.design.widget.AppBarLayout>
